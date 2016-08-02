@@ -1,18 +1,19 @@
 {
-  "name": "basiccrud",
+  "name": "expressboiler",
   "version": "1.0.0",
   "babel": {
     "presets": [
       "es2015"
     ]
   },
-  "description": "Basic crud application with node, express, and mongo db",
-  "main": "index.js",
+  "description": "Boiler plate react app.",
+  "main": "server.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=build/spec/support/jasmine.json",
     "build": "babel src -d build --copy-files",
     "buildw": "babel src -d -w build --copy-files",
-    "start": "./node_modules/.bin/nodemon build/server.js"
+    "start": "node build/server.js",
+    "dev": "./node_modules/.bin/nodemon build/server.js"
   },
   "author": "Ian Thorp",
   "license": "ISC",
