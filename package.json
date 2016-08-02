@@ -1,0 +1,28 @@
+{
+  "name": "basiccrud",
+  "version": "1.0.0",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "description": "Basic crud application with node, express, and mongo db",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=build/spec/support/jasmine.json",
+    "build": "babel src -d build --copy-files",
+    "buildw": "babel src -d -w build --copy-files",
+    "start": "./node_modules/.bin/nodemon build/server.js"
+  },
+  "author": "Ian Thorp",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "jasmine-node": "^1.14.5",
+    "nodemon": "^1.10.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
